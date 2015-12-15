@@ -14,3 +14,10 @@
     clear: both;
   }
 }
+
+@mixin img-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}

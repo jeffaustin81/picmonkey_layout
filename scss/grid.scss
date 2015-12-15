@@ -31,6 +31,7 @@ img {
     padding: 1em;
     width: 100%;
     min-height: 1px;
+    border-radius: 5px;
     }
 /*That's our mobile view taken care of, now let's add a media query to give us a different layout for larger screens. You'll need to determine breakpoints for your own grid, but we're going to use one arbitrary breakpoint of 30em.*/
 @media #{$breakpoint-medium} {
@@ -91,4 +92,65 @@ img {
     // .column-12 {
     //     width: 100%;
     //     }
+}
+
+.nav-icons {
+  fill: $nav-icons-color;
+  height: 40px;
+  width: 40px;
+}
+
+.nav-list {
+  list-style: none;
+  text-align: center;
+}
+.nav-list li {
+  display: inline-block;
+  font-size: 12px;
+  color: $nav-icons-color;
+  text-align: center;
+  margin: 5px;
+}
+
+.main-section {
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+  background: url(../img/birds.jpg) no-repeat bottom center scroll;
+  height: 500px;
+
+  @include img-cover;
+}
+
+.large-font {
+  font-size: 88px;
+  color: $splash-color;
+  font-family: 'Damion', cursive;
+  letter-spacing: .07em;
+}
+
+.splash-paragraph {
+  width: 50%;
+  color: #000;
+  margin-bottom: 75px;
+}
+
+.btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 23px;
+  background: $splash-color;
+  padding: 8px 15px 8px 15px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.inner-splash-page-content {
+  margin: 35px;
 }
