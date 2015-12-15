@@ -93,6 +93,19 @@ img {
   text-align: center;
   margin: 5px; }
 
+.header-list-right {
+  list-style: none; }
+
+.header-list-right li {
+  display: inline-block;
+  margin: 5px; }
+
+.header-list-right li a {
+  text-decoration: none; }
+
+.header-list-right li a span {
+  color: rgba(57, 135, 135, 0.8); }
+
 .main-section {
   width: auto;
   max-width: 100%;
@@ -126,10 +139,21 @@ img {
   padding: 8px 15px 8px 15px;
   text-decoration: none; }
 
+.splash-btn {
+  background: rgba(183, 0, 0, 0.7); }
+
+.header-btn {
+  background: rgba(57, 135, 135, 0.8);
+  font-size: 16px;
+  margin-top: auto; }
+
 .btn:hover {
   text-decoration: none; }
 
 .inner-splash-page-content {
   margin: 35px; }
+
+.crest {
+  fill: rgba(57, 135, 135, 0.8); }
 
 /*# sourceMappingURL=grid.css.map */

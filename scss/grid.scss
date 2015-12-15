@@ -44,54 +44,7 @@ img {
     .column-#{$i} {
         width: 100% / $grid-columns * $i;
     }
-
-}
-    // .column-1 {
-    //     width: 8.33333%;
-    // }
-    // .column-2 {
-    //     width: 16.66667%;
-    //     }
-    //
-    // .column-3 {
-    //     width: 25%;
-    //     }
-    //
-    // .column-4 {
-    //     width: 33.33333%;
-    //     }
-    //
-    // .column-5 {
-    //     width: 41.66667%;
-    //     }
-    //
-    // .column-6 {
-    //     width: 50%;
-    //     }
-    //
-    // .column-7 {
-    //     width: 58.33333%;
-    //     }
-    //
-    // .column-8 {
-    //     width: 66.66667%;
-    //     }
-    //
-    // .column-9 {
-    //     width: 75%;
-    //     }
-    //
-    // .column-10 {
-    //     width: 83.33333%;
-    //     }
-    //
-    // .column-11 {
-    //     width: 91.66667%;
-    //     }
-    //
-    // .column-12 {
-    //     width: 100%;
-    //     }
+  }
 }
 
 .nav-icons {
@@ -112,13 +65,29 @@ img {
   margin: 5px;
 }
 
+.header-list-right {
+  list-style: none;
+}
+
+.header-list-right li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.header-list-right li a {
+  text-decoration: none;
+}
+.header-list-right li a span {
+  color: $under-splash-color;
+}
+
+
 .main-section {
   width: auto;
   max-width: 100%;
   height: auto !important;
   background: url(../img/birds.jpg) no-repeat bottom center scroll;
   height: 500px;
-
   @include img-cover;
 }
 
@@ -147,10 +116,24 @@ img {
   text-decoration: none;
 }
 
+.splash-btn {
+  background: $splash-color;
+}
+
+.header-btn {
+  background: $under-splash-color;
+  font-size: 16px;
+  margin-top: auto;
+}
+
 .btn:hover {
   text-decoration: none;
 }
 
 .inner-splash-page-content {
   margin: 35px;
+}
+
+.crest {
+  fill: $under-splash-color;
 }
